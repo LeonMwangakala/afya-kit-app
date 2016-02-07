@@ -1,0 +1,14 @@
+<% @patients.each do |patient| %>
+        <tr>
+            <td class="col-xs-2"><%= patient.first_name %></td>
+            <td class="col-xs-2"><%= patient.last_name %></td>
+            <td class="col-xs-2"><%= patient.date_of_birth %></td>
+            <td class="col-xs-2"><%= patient.region %></td>
+            <td class="col-xs-2"><%= link_to "Edit", edit_patient_path(patient), remote: true, class: "btn btn-default" %></td>
+            <td class="col-xs-2"><%= link_to "Show", patient_path(patient), class: "btn btn-default" %></td>
+            <td class="col-xs-2"><%= link_to "Delete", patient_path(patient),
+                                    method: :delete, data: {confirm: "Are you sure?"},
+                                    remote: true, class: "btn btn-danger" %>
+            </td>
+        </tr>
+<% end %>

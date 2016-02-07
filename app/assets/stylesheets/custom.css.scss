@@ -1,0 +1,226 @@
+$body-bg: #F5F8FA;
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+.myNavbar {
+    background-color: #FE3443;
+    color: #FE3443;
+    border: 1px solid #FE3443;
+    height: 70px;
+}
+.col-xs-2{
+    width: 14.285% !important;
+}
+.navbar-brand a{
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+.navbar_icon{
+    float: left;
+    padding-left:7px;
+    cursor: pointer;
+    height: 21px; 
+    width: auto;
+}
+ 
+.myNavbar li a {
+    font-family: Roboto;
+    font-size: 10px;
+    color: #FFF;
+    padding-bottom: 5px;
+    height: 69px;
+}
+
+.myNavbar li a:hover { 
+    color: #FFF; 
+    background-color: #E40112; 
+}
+
+.myNavbar li a:focus{
+    color: #FFF;
+    background-color: #E40112;
+}
+
+.active{
+    color: #FFF;
+    background: #E40112;
+}
+
+
+.navbar .navbar-nav {
+    display: inline-block; 
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-brand {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+/* NavBar glyphicon resizing */
+#navbar-icon {
+    font-size: 22px;
+}
+
+#btn-icon {
+    color: #66757F;
+}
+
+
+/* Body */
+body {
+  padding-top: 70px;
+  font-family: "Helvetica", Arial, Open Sans ;
+}
+
+#side-list-menu{
+    margin: 0px 50px 0px 50px;
+    font-size: 12px;
+    width: 15%;
+    position: fixed;
+    top: 180px;
+}
+
+
+#content-wrapper{
+    margin: 0px 240px 0px 240px;
+    padding: 0px 30px;
+    padding-top: 0px;
+    background-color: #F5F8FA;
+}
+
+
+.row.custom-search-form{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.panel-title {
+    font-size: 12px;
+}
+
+.panel-footer.panel-custom{
+    background: #F5F8FA; 
+    /* color: #F5F8FA; */
+}
+
+.thumbnail{
+    height: 170px;
+    width: auto;
+    cursor: pointer;
+}
+.image-placeholder{
+    padding-top: 35px;
+}
+
+/* Table-fixed-patient-index */
+ .table-fixed thead {
+     width: 100%;
+ }
+
+ .table-fixed tbody {
+     height: 230px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+ .table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+ }
+ .table-fixed tbody td, .table-fixed thead > tr > th {
+  float: left;
+  border-bottom-width: 0;
+ }
+/* End of Table-fixed */
+
+.form-group.custom-search-form{
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+
+.input-group-btn{
+    position: relative;
+    font-size: 0px;
+    white-space: nowrap;
+}
+.page-header{
+    color: #66757F;
+}
+
+/* Patient Show page */
+.panel-patient-profile{
+    height: 445px;
+    font-size: 12px;
+    color: #66757F;
+}
+
+.panel-patient-vitals{
+    height: 110px;
+    font-size: 13px;
+}
+.panel-patient-allergies{
+    height: 80px;
+    font-size: 13px;
+}
+.panel-outer-header{
+    color: #66757F;
+}
+
+.col-lg-3 {
+    width: 30%;
+    float: left;
+}
+
+.col-lg-7 {
+    width: 70%;
+    float: right;
+}
+
+.col-md-9 {
+    width: 50%;
+}
+
+.panel-signup{
+    height: 380px;
+    width: 450px;
+}
+
+/* footer */
+footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    height: 90px;
+    border-top: 1px solid #EAEAEA;
+    color: #66757F ;
+}
+
+footer a:hover {
+    color: #222;
+}
+
+footer small {
+    padding-top: 25px;
+    float: left;
+}
+
+footer ul {
+    float: right;
+    list-style: none;
+}
+
+footer ul li {
+    float: left;
+    margin-left: 15px;
+}

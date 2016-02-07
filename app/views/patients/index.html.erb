@@ -1,0 +1,59 @@
+<div class="wrapper">
+    <div id= "content-wrapper">
+        <div class="row">
+            <div class= "col-lg-12">
+                <h4 class= "page-header">Patient Management</h4>
+            </div>
+        </div>
+            
+        <div class="panel panel-default">
+            <div class="panel-heading panel-custom">
+                <h3 class="panel-title">Actions</h3>
+            </div>
+            <div class= "panel-body">
+                <div class="row custom-search-form">
+                    <div class="form-group custom-search-form">
+                        <input type="text" class="form-control" placeholder="Start typing a patient name"></input>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default">
+                                <i id= "btn-icon" class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="panel-footer panel-custom">
+                <div align= "center">
+                    <%= link_to "Register Patient", new_patient_path, remote: true, class: "btn btn-primary" %>
+                    <%= link_to "Add Patient ID", new_patient_path, remote: true, class: "btn btn-success" %>
+                </div>
+            </div>
+        </div>
+        <div class="new-patient"></div>
+        
+        <div class="panel panel-default patient">
+            <!-- Default panel contents -->
+            <div class="panel-heading"><strong>List of all patients</strong></div>
+            <div class="panel-body">
+                <p>This the list of all patients registered in your database..</p>
+            </div>
+            
+            <!-- Table -->
+            <table class="table table-fixed">
+                <thead>
+                    <tr>
+                        <th class="col-xs-2">First name</th>
+                        <th class="col-xs-2">Last name</th>
+                        <th class="col-xs-2">Date of birth</th>
+                        <th class="col-xs-2">Region</th>
+                    </tr>
+                </thead>
+                <tbody class="patient-index">
+                    <%= render "index" %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="patient-modal" class="modal fade"></div> 
