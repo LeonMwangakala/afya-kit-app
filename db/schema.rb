@@ -11,16 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160207200738) do
+ActiveRecord::Schema.define(version: 20160208115224) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "doctors", force: :cascade do |t|
-    t.string   "firstname"
-    t.string   "lastname"
-    t.string   "username"
-    t.string   "email"
+    t.string   "first_name"
+    t.string   "last_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -35,11 +33,12 @@ ActiveRecord::Schema.define(version: 20160207200738) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
+    t.string   "username"
     t.integer  "profile_id"
     t.string   "profile_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email"
   end
 
   add_index "users", ["profile_type", "profile_id"], name: "index_users_on_profile_type_and_profile_id", using: :btree
