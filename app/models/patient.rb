@@ -1,5 +1,5 @@
 class Patient < ActiveRecord::Base
-    has_one :user, as: :profile, dependent: :destory
+    has_one :user, as: :profile, dependent: :destroy
     accepts_nested_attributes_for :user
     
     validates :first_name, presence: true, length: {minimum: 3, maximum: 20} 

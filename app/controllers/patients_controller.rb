@@ -5,10 +5,10 @@ class PatientsController < ApplicationController
    end
    def new
        @patient = Patient.new
+       @user = User.new
    end
    
    def create
-      @patients = Patient.all
       @patient = Patient.create(patient_params) # whitelisting new patients
       #flash[:success] = "Patient was successfully registered"
    end
@@ -40,7 +40,7 @@ class PatientsController < ApplicationController
           @patient = Patient.find(params[:id]) 
        end
        def patient_params
-           params.require(:patient).permit(:first_name, :last_name, :date_of_birth, :region)
+           params.require(:patient).permit!
        end
        
 end

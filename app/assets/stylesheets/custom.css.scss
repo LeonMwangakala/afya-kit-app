@@ -73,7 +73,26 @@ $body-bg: #F5F8FA;
 }
 
 #btn-icon {
-    color: #66757F;
+    color: #fff;
+}
+
+.btn-reddish {
+    background-color: #EA3C51;
+    color: #fff;
+    border-color: #EA3C51;
+}
+
+.top-sntnc {
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.sntnc {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.lnk {
+    padding-top: 20px;
 }
 
 
@@ -194,6 +213,8 @@ body {
 
 .panel-signup{
     height: 380px;
+    background-color: #eef3f6;
+    color: #5b6871;
     width: 450px;
 }
 
@@ -201,7 +222,7 @@ body {
 footer {
     margin-top: 45px;
     padding-top: 5px;
-    height: 90px;
+    height: 70px;
     border-top: 1px solid #EAEAEA;
     color: #66757F ;
 }
