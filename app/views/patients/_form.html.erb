@@ -10,40 +10,46 @@
         <%= form_for @patient, remote: true, html: { style: "display:inline;" } do |f| %>
             <div class="modal-body">
                 <ul class="errors"></ul>
-                <div class="form-group">
-                  <%= f.label :first_name, class:"control-label" %>
-                  <%= f.text_field :first_name, class: "form-control" %>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <%= f.text_field :first_name, class: "form-control", placeholder: "First Name" %>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <%= f.label :last_name, class: "control-label" %>
-                  <%= f.text_field :last_name, class: "form-control" %>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <%= f.text_field :last_name, class: "form-control", placeholder: "Last Name" %>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <%= f.label :date_of_birth, class: "control-label" %>
-                  <%= f.text_field :date_of_birth, class: "form-control" %>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <%= f.text_field :date_of_birth, class: "form-control", placeholder: "Date of birth (DD/MM/YYYY)" %>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <%= f.label :region, class: "control-label" %>
-                  <%= f.text_field :region, class: "form-control" %>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <%= f.text_field :region, class: "form-control", placeholder: "Region" %>
+                  </div>
                 </div>
                 <%= f.fields_for :user, @user, remote: true, html: { style: "display:inline;" } do |u| %>
-                    <div class="form-group">
-                      <%= u.label :username, class:"control-label" %>
-                      <%= u.text_field :username, class: "form-control" %>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <%= u.text_field :username, class: "form-control", placeholder: "Username" %>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <%= u.label :email, class:"control-label" %><br />
-                      <%= u.email_field :email, class: "form-control" %>
-                    </div>
-                    <div class="form-group">
-                      <%= u.label :password, class:"control-label" %><br />
-                      <%= u.password_field :password, class: "form-control" %>
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <%= u.email_field :email, class: "form-control", placeholder: "Email Address" %>
+                      </div>
+                    </div>  
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <%= u.password_field :password, class: "form-control", placeholder: "Password" %>
+                      </div>
                     </div>
                 <% end %>
-            </div>
-            <div class="modal-footer">
-                <%= f.submit "Sign Up For Free", class: "btn btn-danger btn-reddish" %>
-                <%= link_to "Close", signup_path, class: "btn btn-default", data: {dismiss: "modal"} %>
+                <div class="form-group">
+                    <%= f.submit "Sign Up For Free", class: "btn btn-danger btn-reddish btn-lg btn-block" %>
+               </div>
            </div>
        <% end %>
   </div>

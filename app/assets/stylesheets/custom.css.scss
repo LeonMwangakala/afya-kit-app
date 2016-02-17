@@ -86,6 +86,7 @@ $body-bg: #F5F8FA;
     padding-top: 10px;
     padding-bottom: 0px;
 }
+
 .sntnc {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -138,6 +139,7 @@ body {
     width: auto;
     cursor: pointer;
 }
+
 .image-placeholder{
     padding-top: 35px;
 }
@@ -156,10 +158,12 @@ body {
  .table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
   display: block;
  }
+
  .table-fixed tbody td, .table-fixed thead > tr > th {
   float: left;
   border-bottom-width: 0;
  }
+
 /* End of Table-fixed */
 
 .form-group.custom-search-form{
