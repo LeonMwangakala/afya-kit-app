@@ -82,6 +82,16 @@ $body-bg: #F5F8FA;
     border-color: #EA3C51;
 }
 
+.text-reddish {
+    color: #EA3C51;
+    text-decoration: none;
+}
+
+.text-muted {
+    color: #66757F;
+    text-decoration: none;
+}
+
 .top-sntnc {
     padding-top: 10px;
     padding-bottom: 0px;
@@ -93,7 +103,7 @@ $body-bg: #F5F8FA;
 }
 
 .lnk {
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 
@@ -131,8 +141,8 @@ body {
 
 .panel-footer.panel-custom{
     background: #F5F8FA; 
-    /* color: #F5F8FA; */
 }
+
 
 .thumbnail{
     height: 170px;
@@ -220,6 +230,9 @@ body {
     background-color: #eef3f6;
     color: #5b6871;
     width: 450px;
+}
+.panel-heading{
+    
 }
 
 /* footer */

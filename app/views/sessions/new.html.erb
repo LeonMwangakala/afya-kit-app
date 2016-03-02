@@ -1,0 +1,41 @@
+<div class= "wrapper">
+    <div id="content-wrapper">
+        <div class= "column">
+            <h4 class= "page-header"> Sign in</h4>
+        </div>
+        <div align="center">
+            <div class="panel panel-default panel-signup">
+                    <div class="panel-body">
+                        <h3 class="page-header">Welcome Back</h3>
+                        <%= form_for :session, url: signin_path do |f| %>
+                            <div class="sntnc">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                      <%= f.email_field :email, class: "form-control", placeholder: "Email Address" %>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                      <%= f.password_field :password, class: "form-control", placeholder: "Password", autocomplete: "off" %>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <%= f.submit "Sign in", class: "btn btn-danger btn-reddish btn-lg btn-block" %>
+                                </div>
+                            </div>
+                        <% end %>
+                        
+                            <p>
+                              <%= link_to "Forgot pasword?", users_path, class: "text-reddish" %></br>
+                            </p>
+                            <p class="text-muted">  
+                              <%= link_to "Sign up for an account", signup_path, class: "text-muted" %>
+                            </p>
+                        
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
