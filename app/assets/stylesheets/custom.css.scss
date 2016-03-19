@@ -27,7 +27,7 @@ $body-bg: #F5F8FA;
     width: auto;
 }
  
-.myNavbar li a {
+.navbar-custom li a {
     font-family: Roboto;
     font-size: 10px;
     color: #FFF;
@@ -55,6 +55,7 @@ $body-bg: #F5F8FA;
     display: inline-block; 
     float: none;
 }
+
 
 .navbar .navbar-collapse {
     text-align: center;
