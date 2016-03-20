@@ -8,8 +8,9 @@ Rails.application.routes.draw do
     
     resources :patients
 
-
     resources :doctors
+
+    resources :problems
     
     get 'signup', to: "users#new"
     resources :users, except: [:new]
