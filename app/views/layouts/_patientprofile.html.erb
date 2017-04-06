@@ -1,0 +1,23 @@
+<div class="panel panel-default panel-patient-profile">
+    <div class="panel-body">
+        <div class="thumbnail">
+             <%= image_tag "image_placeholder.png", :class => "image-placeholder" %>
+             <div class="caption">
+                 <h5 align="center"></h5>
+             </div>
+        </div>
+        <p><strong>Name:</strong> <%= @patient.first_name %> <%= @patient.last_name %></p>
+        <p><strong>Date of Birth:</strong> <%= @patient.date_of_birth %></p>
+        <p><strong>Gender:</strong></p>
+        <p><strong>Region:</strong> <%= @patient.region %></p>
+        <p><strong>Blood Group:</strong> </p>
+        <p><strong>Height:</strong></p>
+        <p><strong>Weight:</strong></p>
+        <div align="center">
+            <p><%= link_to patient_path, class: "btn btn-default btn-sm" do %>
+                    <i id="btn-icon" class="fa fa-pencil"></i> Edit basic info
+                <% end %>
+            </p>
+        </div>
+    </div>
+</div>

@@ -12,7 +12,7 @@ $body-bg: #F5F8FA;
     height: 70px;
 }
 .col-xs-2{
-    width: 14.285% !important;
+    width: 20% !important;
 }
 .navbar-brand a{
     float: left;
@@ -211,6 +211,12 @@ body {
 .panel-patient-allergies{
     height: 80px;
     font-size: 13px;
+}
+.panel-problems-list{
+    height: 445px;
+    font-size: 12px;
+    color: #66757F;
+
 }
 .panel-outer-header{
     color: #66757F;

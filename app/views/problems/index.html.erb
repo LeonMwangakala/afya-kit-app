@@ -1,0 +1,68 @@
+<div class= "wrapper">
+        <%= render "layouts/sidenav" %>
+    <div id="content-wrapper">
+        <div class= "col-lg-12">
+            <h4 class= "page-header"> Problems</h4>
+        </div>
+        <div class= "col-lg-3">
+            <div class="panel panel-default panel-patient-profile">
+                <div class="panel-body">
+                    <div class="thumbnail">
+                         <%= image_tag "image_placeholder.png", :class => "image-placeholder" %>
+                         <div class="caption">
+                             <h5 align="center"></h5>
+                         </div>
+                    </div>
+                    <p><strong>Name:</strong> </p>
+                    <p><strong>Date of birth:</strong></p>
+                    <p><strong>Gender:</strong></p>
+                    <p><strong>Region:</strong></p>
+                    <p><strong>Blood Group:</strong> </p>
+                    <p><strong>Height:</strong></p>
+                    <p><strong>Weight:</strong></p>
+                    <div align="center">
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class= "col-lg-7 ">
+                <div class="panel panel-default panel-problems-list">
+                    <div class="panel-heading">Problems List</div>
+                    <!-- Table -->
+                    <table class="table table-fixed">
+                        <thead>
+                            <tr>
+                                <th class="col-xs-2">Problem</th>
+                                <th class="col-xs-2">Condition</th>
+                                <th class="col-xs-2">Type</th>
+                                <th class="col-xs-2">Start Date</th>
+                                <th class="col-xs-2">Last Edited</th>
+                            </tr>
+                        </thead>
+                        <tbody class="problem-index">
+                            <% @problems.each do |problem| %>
+                                <tr>
+                                    <td class="col-xs-2"><%= problem.condition %></td>
+                                    <td class="col-xs-2"><%= problem.issue_name %></td>
+                                    <td class="col-xs-2"><%= problem.type %></td>
+                                    <td class="col-xs-2"><%= problem.start_date %></td>
+                                    <td class="col-xs-2"><%= problem.created_at %></td>
+                                    </td>
+                                </tr>
+                            <% end %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div align="right">
+            <%= link_to new_problem_path, remote: true, class: "btn btn-danger btn-reddish btn-sm" do %>
+                <i id="btn-icon" class="fa fa-plus" ></i> Problem
+            <% end %>
+        </div>
+    </div>    
+</div>
+<div id="problem-modal" class="modal fade"></div>

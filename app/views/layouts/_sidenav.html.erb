@@ -1,11 +1,11 @@
 <div id="side-list-menu">
     <div class="list-group">
-        <button type="button" class="list-group-item">History</button>
-        <button type="button" class="list-group-item">Problems</button>
-        <button type="button" class="list-group-item">Medications</button>
-        <button type="button" class="list-group-item">Immunizations</button>
-        <button type="button" class="list-group-item">Vitals</button>
-        <button type="button" class="list-group-item">Notes</button>
-        <button type="button" class="list-group-item">Labs/Studies</button>
+      <%= link_to "History", new_problem_path, class: "list-group-item" %>
+      <%= link_to "Problems", problems_path, class: "list-group-item" %>
+      <%= link_to "Medications", new_problem_path, class: "list-group-item" %>
+      <%= link_to "Immunizations", new_problem_path, class: "list-group-item" %>
+      <%= link_to "Vitals", new_problem_path, class: "list-group-item" %>
+      <%= link_to "Notes", new_problem_path, class: "list-group-item" %>
+      <%= link_to "Labs/Studies", new_problem_path, class: "list-group-item" %>
     </div>
 </div>

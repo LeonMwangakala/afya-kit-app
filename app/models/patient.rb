@@ -1,4 +1,6 @@
 class Patient < ActiveRecord::Base
+    has_many :appointments
+    has_many :doctors, :through => :appointments
     has_one :user, as: :profile, dependent: :destroy
     accepts_nested_attributes_for :user
     
